@@ -14,7 +14,11 @@ One of the popular community detection algorithms is presented in [2]. This algo
 [2] V.D. Blondel, J.-L. Guillaume, R. Lambiotte, E. Lefebvre. "Fast unfolding of communities in large networks." J. Stat. Mech., 2008: 1008.
 
 ## Usage
-1. Import the npm package.
+0. Install the package from NPM
+```shell
+npm i --save louvain
+```
+1. Import the package.
 ```javascript
 let louvain = require('louvain');
 ```

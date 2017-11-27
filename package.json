@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Louvain community detection",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multivacplatform/louvain.git"
+  },
   "scripts": {
-    
+
   },
   "author": "Maziyar PANAHI <maziyar.panahi@iscpif.fr> (http://iscpif.fr/maziyar)",
   "license": "MIT"

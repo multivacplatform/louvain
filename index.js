@@ -1,3 +1,10 @@
+/*
+ Author: Corneliu S. (github.com/upphiminn)
+ This is a javascript implementation of the Louvain
+ community detection algorithm (http://arxiv.org/abs/0803.0476)
+ Based on https://bitbucket.org/taynaud/python-louvain/overview
+ */
+
 module.exports.jLouvain = exports.jLouvain = function () {
     //Constants
     let __PASS_MAX = -1;

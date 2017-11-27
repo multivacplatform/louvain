@@ -14,7 +14,7 @@ One of the popular community detection algorithms is presented in [2]. This algo
 [2] V.D. Blondel, J.-L. Guillaume, R. Lambiotte, E. Lefebvre. "Fast unfolding of communities in large networks." J. Stat. Mech., 2008: 1008.
 
 ## Usage
-1. Import the script.
+1. Import the npm package.
 ```javascript
 let louvain = require('louvain');
 ```
@@ -52,6 +52,9 @@ let result  = community();
 We can see the partitioned graph vertices with the help of color coding.
 
 ![](example/communities.png)
+
+## Test
+This has been tested with Node.js v6.11.5 / npm 5.5.1 - written in ES6
 
 ## Credit
 Corneliu S. (jLouvain) [https://github.com/upphiminn/jLouvain]

@@ -15,8 +15,9 @@ One of the popular community detection algorithms is presented in [2]. This algo
 
 ## Usage
 1. Import the script.
-
-		let louvain = require('louvain');
+```javascript
+let louvain = require('louvain');
+```
 		
 		
 2. Sample Data Format
@@ -34,14 +35,14 @@ let edge_data = [
 ```
 #### (Optional) Partition Data
 ```javascript
-	let init_part = {'id1':0, 'id2':0, 'id3': 1}; 
-	// Object with ids of nodes as properties and community number assigned as value.
+let init_part = {'id1':0, 'id2':0, 'id3': 1}; 
+// Object with ids of nodes as properties and community number assigned as value.
 ```
 3. Run the Algorithm on your node and edge set by chaining the **nodes** and **edges** methods, optionally you can provide an intermediary community partition assignement with the **partition_init** method. [ **Order of chaining is important** ]
 ```javascript
 	
-	let community = louvain().nodes(node_data).edges(edge_data).partition_init(init_part);
-	let result  = community();
+let community = louvain().nodes(node_data).edges(edge_data).partition_init(init_part);
+let result  = community();
 
 ```
 ![](example/default.png)

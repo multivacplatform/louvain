@@ -49,4 +49,9 @@ We can see the partitioned graph vertices with the help of color coding.
 
 ![](example/communities.png)
 
-## 
+## Credit
+Corneliu S. (jLouvain) [https://github.com/upphiminn/jLouvain]
+
+## License
+The MIT License (MIT)
+

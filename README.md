@@ -41,7 +41,7 @@ let edge_data = [
 ```javascript
 	
 	let community = louvain().nodes(node_data).edges(edge_data).partition_init(init_part);
-    let result  = community();
+	let result  = community();
 
 ```
 ![](example/default.png)

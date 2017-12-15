@@ -15,6 +15,8 @@ module.exports.jLouvain = exports.jLouvain = function () {
     let original_graph_edges;
     let original_graph = {};
     let partition_init;
+    let edge_index = {};
+
 
     //Helpers
     function make_set(array) {
@@ -78,14 +80,11 @@ module.exports.jLouvain = exports.jLouvain = function () {
     function add_edge_to_graph(graph, edge) {
         update_assoc_mat(graph, edge);
 
-        let edge_index = graph.edges.map(function (d) {
-            return d.source + '_' + d.target;
-        }).indexOf(edge.source + '_' + edge.target);
-
-        if (edge_index !== -1) {
-            graph.edges[edge_index].weight = edge.weight;
+        if (edge_index[edge.source+'_'+edge.target]) {
+            graph.edges[edge_index[edge.source + '_' + edge.target]].weight = edge.weight;
         } else {
             graph.edges.push(edge);
+            edge_index[edge.source + '_' + edge.target] = graph.edges.length - 1;
         }
     }
 
@@ -295,6 +294,7 @@ module.exports.jLouvain = exports.jLouvain = function () {
             w_prec = (get_edge_weight(ret, com1, com2) || 0);
             let new_weight = (w_prec + weight);
             add_edge_to_graph(ret, {'source': com1, 'target': com2, 'weight': new_weight});
+            edge_index = {};
         });
 
         return ret;

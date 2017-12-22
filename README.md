@@ -13,6 +13,8 @@ One of the popular community detection algorithms is presented in [2]. This algo
 
 [2] V.D. Blondel, J.-L. Guillaume, R. Lambiotte, E. Lefebvre. "Fast unfolding of communities in large networks." J. Stat. Mech., 2008: 1008.
 
+(http://arxiv.org/abs/0803.0476) (http://en.wikipedia.org/wiki/Community_structure#The_Louvain_method).
+
 ## Usage
 0. Install the package from NPM
 ```shell

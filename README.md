@@ -1,4 +1,4 @@
-# Louvain
+# Louvain [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/multivacplatform/louvain/blob/master/LICENSE)
 
 
 ---
